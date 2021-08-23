@@ -1,0 +1,10 @@
+{
+    "Bootstrap 4 started template" : {
+        "prefix": "epc",
+        "body": [
+            "export class ${TM_FILENAME_BASE} {",
+            "",
+            "}"
+        ]
+    }
+}

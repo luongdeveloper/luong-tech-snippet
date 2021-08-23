@@ -1,0 +1,231 @@
+{
+    "React template": {
+        "prefix": "rcp",
+        "body": [
+            "import React, { useEffect, useState } from \"react\"",
+            "import clsx from \"clsx\"",
+            "import { Grid, makeStyles } from \"@material-ui/core\";",
+            "",
+            "type Props = {};",
+            "const useStyle = makeStyles((theme) => ({}));",
+            "function ${TM_FILENAME_BASE}(props : Props) {",
+            "const classes = useStyle();",
+            "   const [state, setState] = useState();",
+            "   useEffect(() => {",
+            "       return () => {};",
+            "   }, []);",
+            "",
+            "   return <Grid>",
+            "   ",
+            "   </Grid>;",
+            "}",
+            "",
+            "export default React.memo(${TM_FILENAME_BASE});"
+        ]
+    },
+    "ClassName": {
+        "prefix": "cln",
+        "body": ["className={clsx(${1})}"]
+    },
+    "onClick": {
+        "prefix": "ocl",
+        "body": ["onClick={(e)=>{${1}}}"]
+    },
+    "onChange": {
+        "prefix": "och",
+        "body": ["onChange={(e)=>{${1}}}"]
+    },
+    "Alert": {
+        "prefix": "m-alert",
+        "body": ["<Alert${1:} severity=\"${2|error,warning,info,success|}\">${3:content}</Alert>"]
+    },
+    "Alert Title": {
+        "prefix": "m-alert-tt",
+        "body": [
+            "<Alert${1:} severity=\"${2|error,warning,info,success|}\">",
+            "\t<AlertTitle${3:}>${4:title}</AlertTitle>",
+            "${5:content}",
+            "</Alert>"
+        ]
+    },
+    "Chip": {
+        "prefix": "m-chip",
+        "body": [
+            "<Chip${1} variant=\"${2|default,outlined|}\" label=\"${3:content}\" color=\"${4|default,primary,secondary|}\"/>"
+        ]
+    },
+    "Button": {
+        "prefix": "m-btn",
+        "body": [
+            "<Button${1} variant=\"${2|contained,outlined,text|}\" color=\"${3|inherit,default,primary,secondary|}\">",
+            "\t ${4:content}",
+            "</Button>"
+        ]
+    },
+    "Radio": {
+        "prefix": "m-radio",
+        "body": [
+            "<RadioGroup${1} value={${2:value}}>",
+            "\t<FormControlLabel${3}",
+            "\t\tcontrol={",
+            "\t\t\t<Radio${4} value={${5:value}} color={\"${6|default,primary,secondary|}\"} />",
+            "\t\t}",
+            "\t\tlabel=\"${7:content}\"",
+            "\t/>",
+            "</RadioGroup>"
+        ]
+    },
+    "Checkbox": {
+        "prefix": "m-check-box",
+        "body": [
+            "<FormControlLabel${1}",
+            "\tcontrol={",
+            "\t\t<Switch${2} checked={${4|true,false|}} color={\"${5|default,primary,secondary|}\"} />",
+            "\t}",
+            "\tlabel=\"${3:content}\"",
+            "/>"
+        ]
+    },
+    "Switch": {
+        "prefix": "m-switch",
+        "body": [
+            "<FormControlLabel${1}",
+            "\tcontrol={",
+            "\t\t<Checkbox${2} checked={${4|true,false|}} color={\"${5|default,primary,secondary|}\"} />",
+            "\t}",
+            "\tlabel=\"${3:content}\"",
+            "/>"
+        ]
+    },
+    "Float button": {
+        "prefix": "m-fbtn",
+        "body": [
+            "<Fab${1} variant = \"${2|circular,extended,round|}\" color=\"${3|inherit,default,primary,secondary|}\">",
+            "<${4|AddIcon|}/>",
+            "</Fab>"
+        ]
+    },
+    "TextFlied": {
+        "prefix": "m-input",
+        "body": [
+            "<TextField${1} variant=\"${2|filled,outlined,standard|}\" color=\"${3|primary,secondary|}\" label= \"${4:label}\" />"
+        ]
+    },
+    "Accordion": {
+        "prefix": "m-accor",
+        "body": [
+            "<Accordion${1}>",
+            "\t<AccordionSummary${2}",
+            "\t\texpandIcon={<ExpandMoreIcon${3} />}",
+            "\t>",
+            "\t\t<Typography${4}>${6:title}</Typography>",
+            "\t</AccordionSummary>",
+            "\t<AccordionDetails${5}>",
+            "\t\t<Typography>${7:content}</Typography>",
+            "\t</AccordionDetails>",
+            "</Accordion>"
+        ]
+    },
+    "Circular-Progress": {
+        "prefix": "m-c-progress",
+        "body": [
+            "<CircularProgress${1} color=\"${2|primary,secondary,inherit|}\" variant = \"${3|determinate,indeterminate,static|}\" />"
+        ]
+    },
+    "Line-Progress": {
+        "prefix": "m-l-progress",
+        "body": [
+            "<LinearProgress${1} color=\"${2|primary,secondary,inherit|}\" variant = \"${3|determinate,indeterminate,static|}\" />"
+        ]
+    },
+    "Backdrop": {
+        "prefix": "m-backdrop",
+        "body": [
+            "<Backdrop${1} open={${2|true,false|}} >",
+            "<CircularProgress${3} color=\"${4|primary,secondary,inherit|}\" variant = \"${5|determinate,indeterminate,static|}\" />",
+            "</Backdrop>"
+        ]
+    },
+    "avatars": {
+        "prefix": "m-avt",
+        "body": ["<Avatar${1} variant = \"${2|circle,circular,rounded,square|}\">", "\t${3:content}", "</Avatar>"]
+    },
+    "Image avatars": {
+        "prefix": "m-avt-img",
+        "body": ["<Avatar${1} variant = \"${2|circle,circular,rounded,square|}\" src={${3:link}} />"]
+    },
+    "Group avatars": {
+        "prefix": "m-gavt",
+        "body": [
+            "<AvatarGroup${1} max={${2:max}}>",
+            "\t<Avatar${3} variant = \"${4|circle,circular,rounded,square|}\">",
+            "\t\t${5:content}",
+            "\t</Avatar>",
+            "</AvatarGroup>"
+        ]
+    },
+    "Group  Image avatars": {
+        "prefix": "m-gavt-img",
+        "body": [
+            "<AvatarGroup${1} max={${2:max}}>",
+            "\t<Avatar${3} variant = \"${4|circle,circular,rounded,square|}\" src={${5:link}} />",
+            "</AvatarGroup>"
+        ]
+    },
+    "Badge": {
+        "prefix": "m-badge",
+        "body": [
+            "<Badge${1} badgeContent={${2:value}} color=\"${3|primary,secondary,default,error|}\"  ${4| ,variant = \"dot\"|} ${5| ,max = {99}|}>",
+            "\t${6:icon}",
+            "</Badge>"
+        ]
+    },
+    "Divider": {
+        "prefix": "m-divi",
+        "body": ["<Divider />"]
+    },
+    "Tooltip": {
+        "prefix": "m-tt",
+        "body": ["<Tooltip${1} title={${2:title}} arrow>", "\t${3:cpn}", "</Tooltip>"]
+    },
+    "Typography": {
+        "prefix": "m-typo",
+        "body": [
+            "<Typography${1} variant=\"${2|h1,h2,h3,h4,h5,h6,subtitle1,subtitle2,body1,body2,button,caption,overline|}\"  color=\"${3|inherit,initial,primary,secondary,error,textPrimary,textSecondary|}\">",
+            "\t${4:content}",
+            "</Typography>"
+        ]
+    },
+    "Transaction collapse": {
+        "prefix": "m-tr-co",
+        "body": ["<Collapse${1} in={true} timeout={${2:timeout}}>", "\t${3:cpn}", "</Collapse>"]
+    },
+    "Transaction grow": {
+        "prefix": "m-tr-gr",
+        "body": ["<Grow${1} in={true} timeout={${2:timeout}}>", "\t${3:cpn}", "</Grow>"]
+    },
+    "Transaction Slide": {
+        "prefix": "m-tr-sl",
+        "body": ["<Slide${1} direction=\"${2|up,down|}\" in={true} timeout={${3:timeout}}>", "\t${4:cpn}", "</Slide>"]
+    },
+    "Transaction Zoom": {
+        "prefix": "m-tr-zo",
+        "body": ["<Zoom${1}  in={true} timeout={${3:timeout}}>", "\t${4:cpn}", "</Zoom>"]
+    },
+    "Autocomplete": {
+        "prefix": "m-input-suggest",
+        "body": [
+            "<Autocomplete${1}",
+            "\toptions={${2:arrayData}}",
+            "\tgetOptionLabel={(option) => ${3:label}}",
+            "\trenderInput={(params) => <TextField${4} {...params} label=\"${5:label}\" variant=\"${6|filled,outlined,standard|}\" />}",
+            "/>"
+        ]
+    },
+    "Pagination": {
+        "prefix": "m-paging",
+        "body": [
+            "<Pagination${1} count={${2:total}}  color=\"${3|primary,secondary,standard|}\" ${4| ,variant=\"outlined\"|}/>"
+        ]
+    }
+}

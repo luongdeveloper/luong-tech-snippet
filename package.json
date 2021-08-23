@@ -1,0 +1,30 @@
+{
+    "name": "luong-snippet",
+    "displayName": "luong-snippet",
+    "description": "Snippet for only Lương",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "icon": "images/luong.jpg",
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets-ts.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/snippets-react-ts.code-snippets"
+            }
+        ]
+    },
+    "dependencies": {
+        "@material-ui/core": "^4.12.3",
+        "@material-ui/lab": "^4.0.0-alpha.60",
+        "clsx": "^1.1.1"
+    }
+}
