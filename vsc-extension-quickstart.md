@@ -1,23 +1,249 @@
-# Welcome to your VS Code Extension
+# React material Snippet
 
-## What's in the folder
+Snippet for developers using material UI with react
 
-* This folder contains all of the files necessary for your extension.
-* `package.json` - this is the manifest file that defines the location of the snippet file and specifies the language of the snippets.
-* `snippets/snippets.json` - the file containing all snippets.
+## Authors
 
-## Get up and running straight away
+-   [@luongdeveloper](https://github.com/luongdeveloper)
 
-* Press `F5` to open a new window with your extension loaded.
-* Create a new file with a file name suffix matching your language.
-* Verify that your snippets are proposed on intellisense.
+## Snippet
 
-## Make changes
+#### Material React Snippet
 
-* You can relaunch the extension from the debug toolbar after making changes to the files listed above.
-* You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
+```javascript
+// m-alert
+<Alert severity="success">content</Alert>
+```
 
-## Install your extension
+---
 
-* To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.
-* To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
+```javascript
+// m-alert-tt
+<Alert severity="info">
+    <AlertTitle>title</AlertTitle>
+    content
+</Alert>
+```
+
+---
+
+```javascript
+// m-chip
+<Chip variant="default" label="content" color="default" />
+```
+
+---
+
+```javascript
+// m-btn
+<Button variant="contained" color="inherit">
+    content
+</Button>
+```
+
+---
+
+```javascript
+// m-radio
+<RadioGroup value={value}>
+    <FormControlLabel control={<Radio value={value} color={"default"} />} label="content" />
+</RadioGroup>
+```
+
+---
+
+```javascript
+// m-check-box
+<FormControlLabel control={<Switch checked={true} color={"default"} />} label="content" />
+```
+
+---
+
+```javascript
+// m-switch
+<FormControlLabel control={<Checkbox checked={true} color={"default"} />} label="content" />
+```
+
+---
+
+```javascript
+// m-fbtn
+<Fab variant="circular" color="inherit">
+    <AddIcon />
+</Fab>
+```
+
+---
+
+```javascript
+// m-input
+<TextField variant="filled" color="primary" label="label" />
+```
+
+---
+
+```javascript
+// m-accor
+<Accordion>
+    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+        <Typography>title</Typography>
+    </AccordionSummary>
+    <AccordionDetails>
+        <Typography>content</Typography>
+    </AccordionDetails>
+</Accordion>
+```
+
+---
+
+```javascript
+// m-c-progress
+<CircularProgress color="primary" variant="determinate" />
+```
+
+---
+
+```javascript
+// m-l-progress
+<LinearProgress color="primary" variant="determinate" />
+```
+
+---
+
+```javascript
+// m-backdrop
+<Backdrop open={true}>
+    <CircularProgress color="primary" variant="determinate" />
+</Backdrop>
+```
+
+---
+
+```javascript
+// m-backdrop
+<Backdrop open={true}>
+    <CircularProgress color="primary" variant="determinate" />
+</Backdrop>
+```
+
+---
+
+```javascript
+// m-avt
+<Avatar variant="circle">content</Avatar>
+```
+
+---
+
+```javascript
+// m-avt-img
+<Avatar variant="circle" src={link} />
+```
+
+---
+
+```javascript
+// m-gavt
+<AvatarGroup max={max}>
+    <Avatar variant="circle">content</Avatar>
+</AvatarGroup>
+```
+
+---
+
+```javascript
+// m-gavt-img
+<AvatarGroup max={max}>
+    <Avatar variant="circle" src={link} />
+</AvatarGroup>
+```
+
+---
+
+```javascript
+// m-badge
+<Badge badgeContent={value} color="primary">
+    icon
+</Badge>
+```
+
+---
+
+```javascript
+// m-divi
+<Divider />
+```
+
+---
+
+```javascript
+// m-tt
+<Tooltip title={title} arrow>
+    cpn
+</Tooltip>
+```
+
+---
+
+```javascript
+// m-typo
+<Typography variant="h1" color="inherit">
+    content
+</Typography>
+```
+
+---
+
+```javascript
+// m-tr-co
+<Collapse in={true} timeout={timeout}>
+    cpn
+</Collapse>
+```
+
+---
+
+```javascript
+// m-tr-gr
+<Grow in={true} timeout={timeout}>
+    cpn
+</Grow>
+```
+
+---
+
+```javascript
+// m-tr-zo
+<Zoom in={true} timeout={timeout}>
+    cpn
+</Zoom>
+```
+
+---
+
+```javascript
+// m-tr-sl
+<Slide direction="up" in={true} timeout={timeout}>
+    cpn
+</Slide>
+```
+
+---
+
+```javascript
+// m-input-suggest
+<Autocomplete
+    options={arrayData}
+    getOptionLabel={(option) => label}
+    renderInput={(params) => <TextField {...params} label="label" variant="filled" />}
+/>
+```
+
+---
+
+```javascript
+// m-paging
+<Pagination count={total} color="primary" />
+```
+
+---

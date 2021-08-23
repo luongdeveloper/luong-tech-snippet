@@ -1,66 +1,249 @@
-# react-snip README
+# React material Snippet
 
-This is the README for your extension "react-snip". After writing up a brief description, we recommend including the following sections.
+Snippet for developers using material UI with react
 
-## Features
+## Authors
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+-   [@luongdeveloper](https://github.com/luongdeveloper)
 
-For example if there is an image subfolder under your extension project workspace:
+## Snippet
 
-\!\[feature X\]\(images/feature-x.png\)
+#### Material React Snippet
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+```javascript
+// m-alert
+<Alert severity="success">content</Alert>
+```
 
-## Requirements
+---
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+```javascript
+// m-alert-tt
+<Alert severity="info">
+    <AlertTitle>title</AlertTitle>
+    content
+</Alert>
+```
 
-## Extension Settings
+---
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+```javascript
+// m-chip
+<Chip variant="default" label="content" color="default" />
+```
 
-For example:
+---
 
-This extension contributes the following settings:
+```javascript
+// m-btn
+<Button variant="contained" color="inherit">
+    content
+</Button>
+```
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+---
 
-## Known Issues
+```javascript
+// m-radio
+<RadioGroup value={value}>
+    <FormControlLabel control={<Radio value={value} color={"default"} />} label="content" />
+</RadioGroup>
+```
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+---
 
-## Release Notes
+```javascript
+// m-check-box
+<FormControlLabel control={<Switch checked={true} color={"default"} />} label="content" />
+```
 
-Users appreciate release notes as you update your extension.
+---
 
-### 1.0.0
+```javascript
+// m-switch
+<FormControlLabel control={<Checkbox checked={true} color={"default"} />} label="content" />
+```
 
-Initial release of ...
+---
 
-### 1.0.1
+```javascript
+// m-fbtn
+<Fab variant="circular" color="inherit">
+    <AddIcon />
+</Fab>
+```
 
-Fixed issue #.
+---
 
-### 1.1.0
+```javascript
+// m-input
+<TextField variant="filled" color="primary" label="label" />
+```
 
-Added features X, Y, and Z.
+---
 
------------------------------------------------------------------------------------------------------------
+```javascript
+// m-accor
+<Accordion>
+    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+        <Typography>title</Typography>
+    </AccordionSummary>
+    <AccordionDetails>
+        <Typography>content</Typography>
+    </AccordionDetails>
+</Accordion>
+```
 
-## Working with Markdown
+---
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+```javascript
+// m-c-progress
+<CircularProgress color="primary" variant="determinate" />
+```
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+---
 
-### For more information
+```javascript
+// m-l-progress
+<LinearProgress color="primary" variant="determinate" />
+```
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+---
 
-**Enjoy!**
-# snippet-react-material
+```javascript
+// m-backdrop
+<Backdrop open={true}>
+    <CircularProgress color="primary" variant="determinate" />
+</Backdrop>
+```
+
+---
+
+```javascript
+// m-backdrop
+<Backdrop open={true}>
+    <CircularProgress color="primary" variant="determinate" />
+</Backdrop>
+```
+
+---
+
+```javascript
+// m-avt
+<Avatar variant="circle">content</Avatar>
+```
+
+---
+
+```javascript
+// m-avt-img
+<Avatar variant="circle" src={link} />
+```
+
+---
+
+```javascript
+// m-gavt
+<AvatarGroup max={max}>
+    <Avatar variant="circle">content</Avatar>
+</AvatarGroup>
+```
+
+---
+
+```javascript
+// m-gavt-img
+<AvatarGroup max={max}>
+    <Avatar variant="circle" src={link} />
+</AvatarGroup>
+```
+
+---
+
+```javascript
+// m-badge
+<Badge badgeContent={value} color="primary">
+    icon
+</Badge>
+```
+
+---
+
+```javascript
+// m-divi
+<Divider />
+```
+
+---
+
+```javascript
+// m-tt
+<Tooltip title={title} arrow>
+    cpn
+</Tooltip>
+```
+
+---
+
+```javascript
+// m-typo
+<Typography variant="h1" color="inherit">
+    content
+</Typography>
+```
+
+---
+
+```javascript
+// m-tr-co
+<Collapse in={true} timeout={timeout}>
+    cpn
+</Collapse>
+```
+
+---
+
+```javascript
+// m-tr-gr
+<Grow in={true} timeout={timeout}>
+    cpn
+</Grow>
+```
+
+---
+
+```javascript
+// m-tr-zo
+<Zoom in={true} timeout={timeout}>
+    cpn
+</Zoom>
+```
+
+---
+
+```javascript
+// m-tr-sl
+<Slide direction="up" in={true} timeout={timeout}>
+    cpn
+</Slide>
+```
+
+---
+
+```javascript
+// m-input-suggest
+<Autocomplete
+    options={arrayData}
+    getOptionLabel={(option) => label}
+    renderInput={(params) => <TextField {...params} label="label" variant="filled" />}
+/>
+```
+
+---
+
+```javascript
+// m-paging
+<Pagination count={total} color="primary" />
+```
+
+---
