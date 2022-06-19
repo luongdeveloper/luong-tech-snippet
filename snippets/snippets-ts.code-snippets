@@ -1,10 +1,17 @@
 {
-    "Bootstrap 4 started template" : {
+    "Bootstrap 4 started template": {
         "prefix": "epc",
         "body": [
             "export class ${TM_FILENAME_BASE} {",
             "",
             "}"
         ]
-    }
+    },
+    "uuid": {
+        "prefix": "uuid",
+        "body": [
+            "${UUID}"
+        ],
+        "scope": "javascript,typescript,csharp"
+    },
 }

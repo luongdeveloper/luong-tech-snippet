@@ -1,0 +1,100 @@
+{
+    "uuid": {
+        "prefix": "uuid",
+        "body": [
+            "${UUID}"
+        ],
+        "scope": "javascript,typescript,csharp"
+    },
+    "Print to console": {
+        "prefix": "log",
+        "body": [
+            "Console.WriteLine($1);",
+            "$2"
+        ],
+        "description": "Log output to console"
+    },
+    "Print to console JSON": {
+        "prefix": "logj",
+        "body": [
+            "Console.WriteLine(JsonConvert.SerializeObject($1));",
+            "$2"
+        ],
+        "description": "Log output to console JSON"
+    },
+    "Print log console": {
+        "prefix": "logg",
+        "body": [
+            "Logger.Warn($1)",
+            "$2"
+        ],
+        "description": "Log output to console"
+    },
+    "Print log JSON": {
+        "prefix": "loggj",
+        "body": [
+            "Logger.Warn(JsonConvert.SerializeObject($1));",
+            "$2"
+        ],
+        "description": "Log output to console JSON"
+    },
+    "LINQ group Join ": {
+        "prefix": "l-gjoin",
+        "body": [
+            "${1:source}.GroupJoin(${2:inner}, ${1/(.).*$/$1/} => ${1/(.).*$/$1/}.${3:keySource}, ${2/(.).*$/$1/} => ${2/(.).*$/$1/}.${4:keyInner}, (${1/(.).*$/$1/}, ${2/(.).*$/$1/}) =>",
+            "{",
+            "    return ${2/(.).*$/$1/};",
+            "});"
+        ],
+        "description": ""
+    },
+    "LINQ group By": {
+        "prefix": "l-gby",
+        "body": [
+            "${1:source}.GroupBy( ${1/(.).*$/$1/} => ${1/(.).*$/$1/}.${2:keySource}, (baseKey, groupItems) =>",
+            "{",
+            "    return new ",
+            "    {",
+            "         Key = baseKey,",
+            "         ${3:nextValue}",
+            "     };",
+            "});"
+        ],
+        "description": ""
+    },
+    "LINQ Aggregate": {
+        "prefix": "l-reduce",
+        "body": [
+            "${1:values}.Aggregate(${2:initValue}, (pre, next) =>",
+            "    {",
+            "      return ${3:result};",
+            "    });"
+        ],
+        "description": ""
+    },
+    "LINQ Join ": {
+        "prefix": "l-join",
+        "body": [
+            "${1:source}.Join(${2:inner}, ${1/(.).*$/$1/} => ${1/(.).*$/$1/}.${3:keySource}, ${2/(.).*$/$1/} => ${2/(.).*$/$1/}.${4:keyInner}, (${1/(.).*$/$1/}, ${2/(.).*$/$1/}) =>",
+            "{",
+            "    return ${2/(.).*$/$1/};",
+            "});"
+        ],
+        "description": ""
+    },
+    "YOONG dbContext": {
+        "prefix": "db",
+        "body": [
+            "DbContextProvider.GetDbContext().${1:tableName}",
+            "$2"
+        ]
+    },
+    "test ": {
+        "prefix": "test",
+        "body": [
+            "RANDOM is ${RANDOM}",
+            "RANDOM_HEX is ${RANDOM_HEX}",
+        ],
+        "description": ""
+    },
+}
